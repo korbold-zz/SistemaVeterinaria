@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ACA149EE-F2F5-474C-BA36-E128E8AC17E8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PROYECTO_VETERINARIA</RootNamespace>
+    <AssemblyName>PROYECTO VETERINARIA</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SkinSoft.VisualStyler, Version=2.4.0.0, Culture=neutral, PublicKeyToken=0fda9f423e1d9830, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DSveterinaria.cs">
+      <DependentUpon>DSveterinaria.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DSveterinaria.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSveterinaria.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_Cliente.Designer.cs">
+      <DependentUpon>FRM_Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_Persona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_Persona.Designer.cs">
+      <DependentUpon>FRM_Persona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MENÚ\ATENCION\FRM_RegistroDiario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MENÚ\ATENCION\FRM_RegistroDiario.Designer.cs">
+      <DependentUpon>FRM_RegistroDiario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MENÚ\ADMINISTRAR\FRM_Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MENÚ\ADMINISTRAR\FRM_Usuarios.Designer.cs">
+      <DependentUpon>FRM_Usuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MENÚ\ATENCION MASCOTA\FRM_ControlMascota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MENÚ\ATENCION MASCOTA\FRM_ControlMascota.Designer.cs">
+      <DependentUpon>FRM_ControlMascota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MENÚ\ATENCION\FRM_FichaIngreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MENÚ\ATENCION\FRM_FichaIngreso.Designer.cs">
+      <DependentUpon>FRM_FichaIngreso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MENÚ\ATENCION MASCOTA\FRM_Mascotas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MENÚ\ATENCION MASCOTA\FRM_Mascotas.Designer.cs">
+      <DependentUpon>FRM_Mascotas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MENÚ\ADMINISTRAR\FRM_Medicos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MENÚ\ADMINISTRAR\FRM_Medicos.Designer.cs">
+      <DependentUpon>FRM_Medicos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MENÚ\PARAMETROS\FRM_Medicamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MENÚ\PARAMETROS\FRM_Medicamentos.Designer.cs">
+      <DependentUpon>FRM_Medicamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MENÚ\ATENCION MASCOTA\FRM_MedicamentosSuministrados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MENÚ\ATENCION MASCOTA\FRM_MedicamentosSuministrados.Designer.cs">
+      <DependentUpon>FRM_MedicamentosSuministrados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_Nuevo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_Nuevo.Designer.cs">
+      <DependentUpon>FRM_Nuevo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MENÚ\PARAMETROS\FRM_Raza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MENÚ\PARAMETROS\FRM_Raza.Designer.cs">
+      <DependentUpon>FRM_Raza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MENÚ\ATENCION MASCOTA\FRM_SalidaMascota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MENÚ\ATENCION MASCOTA\FRM_SalidaMascota.Designer.cs">
+      <DependentUpon>FRM_SalidaMascota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MENÚ\PARAMETROS\FRM_TipoMascota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MENÚ\PARAMETROS\FRM_TipoMascota.Designer.cs">
+      <DependentUpon>FRM_TipoMascota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MENÚ\PARAMETROS\FRM_Cantones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MENÚ\PARAMETROS\FRM_Cantones.Designer.cs">
+      <DependentUpon>FRM_Cantones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MENÚ\ATENCION\FRM_Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MENÚ\ATENCION\FRM_Clientes.Designer.cs">
+      <DependentUpon>FRM_Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MENÚ\PARAMETROS\FRM_Provincias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MENÚ\PARAMETROS\FRM_Provincias.Designer.cs">
+      <DependentUpon>FRM_Provincias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MENÚ\ADMINISTRAR\FRM_Roles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MENÚ\ADMINISTRAR\FRM_Roles.Designer.cs">
+      <DependentUpon>FRM_Roles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN.Designer.cs">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDIMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIMenu.Designer.cs">
+      <DependentUpon>MDIMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Metodos.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FRM_Cliente.resx">
+      <DependentUpon>FRM_Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_Persona.resx">
+      <DependentUpon>FRM_Persona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MENÚ\ATENCION\FRM_RegistroDiario.resx">
+      <DependentUpon>FRM_RegistroDiario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MENÚ\ADMINISTRAR\FRM_Usuarios.resx">
+      <DependentUpon>FRM_Usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MENÚ\ATENCION MASCOTA\FRM_ControlMascota.resx">
+      <DependentUpon>FRM_ControlMascota.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MENÚ\ATENCION\FRM_FichaIngreso.resx">
+      <DependentUpon>FRM_FichaIngreso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MENÚ\ATENCION MASCOTA\FRM_Mascotas.resx">
+      <DependentUpon>FRM_Mascotas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MENÚ\ADMINISTRAR\FRM_Medicos.resx">
+      <DependentUpon>FRM_Medicos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MENÚ\PARAMETROS\FRM_Medicamentos.resx">
+      <DependentUpon>FRM_Medicamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MENÚ\ATENCION MASCOTA\FRM_MedicamentosSuministrados.resx">
+      <DependentUpon>FRM_MedicamentosSuministrados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_Nuevo.resx">
+      <DependentUpon>FRM_Nuevo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MENÚ\PARAMETROS\FRM_Raza.resx">
+      <DependentUpon>FRM_Raza.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MENÚ\ATENCION MASCOTA\FRM_SalidaMascota.resx">
+      <DependentUpon>FRM_SalidaMascota.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MENÚ\PARAMETROS\FRM_TipoMascota.resx">
+      <DependentUpon>FRM_TipoMascota.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MENÚ\PARAMETROS\FRM_Cantones.resx">
+      <DependentUpon>FRM_Cantones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MENÚ\ATENCION\FRM_Clientes.resx">
+      <DependentUpon>FRM_Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MENÚ\PARAMETROS\FRM_Provincias.resx">
+      <DependentUpon>FRM_Provincias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MENÚ\ADMINISTRAR\FRM_Roles.resx">
+      <DependentUpon>FRM_Roles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN.resx">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIMenu.resx">
+      <DependentUpon>MDIMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="DSveterinaria.xsc">
+      <DependentUpon>DSveterinaria.xsd</DependentUpon>
+    </None>
+    <None Include="DSveterinaria.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSveterinaria.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DSveterinaria.xss">
+      <DependentUpon>DSveterinaria.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bien.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
